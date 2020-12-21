@@ -85,9 +85,9 @@ input,
 
 /* --------------------------------- */
 
-/* -- :: Navbar */
+/* -- :: notanavbar */
 /* top bar */
-nav .top-bar {
+notanav .top-bar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -96,11 +96,11 @@ nav .top-bar {
 }
 
 /* news */
-nav .top-bar .news {
+notanav .top-bar .news {
   font-size: 14px;
 }
 
-nav .top-bar .news span.stat {
+notanav .top-bar .news span.stat {
   font-size: 12px;
   color: #fff;
   background: var(--thGreen);
@@ -109,7 +109,7 @@ nav .top-bar .news span.stat {
   margin-right: 5px;
 }
 
-nav .top-bar .news a {
+notanav .top-bar .news a {
   position: relative;
   color: var(--pColor);
   font-weight: 600;
@@ -123,7 +123,7 @@ nav .top-bar .news a {
   transition: color .25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-nav .top-bar .news a::after {
+notanav .top-bar .news a::after {
   position: absolute;
   content: '\f105';
   right: 0;
@@ -138,16 +138,16 @@ nav .top-bar .news a::after {
   -moz-osx-font-smoothing: grayscale;
 }
 
-nav .top-bar .news a:hover {
+notanav .top-bar .news a:hover {
   color: var(--thBlue);
 }
 
 /* links */
-nav .top-bar ul.links li:not(:last-child) {
+notanav .top-bar ul.links li:not(:last-child) {
   margin-right: 20px;
 }
 
-nav .top-bar ul.links li a {
+notanav .top-bar ul.links li a {
   font-size: 14px;
   color: var(--pColor);
   font-weight: 600;
@@ -155,12 +155,12 @@ nav .top-bar ul.links li a {
   transition: color .25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-nav .top-bar ul.links li a:hover {
+notanav .top-bar ul.links li a:hover {
   color: var(--thBlue);
 }
 
-/* -- :: Navbar :: -- */
-nav {
+/* -- :: notanavbar :: -- */
+notanav {
   background: transparent;
   position: fixed !important;
   z-index: 999;
@@ -170,19 +170,19 @@ nav {
   transition: all .25s linear;
 }
 
-nav .navbar-brand img {
+notanav .notanavbar-brand img {
   height: 30px;
 }
 
-/* nav item */
-nav li.nav-item > a.nav-link {
+/* notanav item */
+notanav li.notanav-item > a.notanav-link {
   color: #fff;
   font-weight: 600;
   -webkit-transition: opacity .25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: opacity .25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-nav li.nav-item > a.nav-link.dropdown-toggle::after {
+notanav li.notanav-item > a.notanav-link.dropdown-toggle::after {
   position: relative;
   content: "\f107";
   display: inline-block;
@@ -200,16 +200,16 @@ nav li.nav-item > a.nav-link.dropdown-toggle::after {
   transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-nav li.nav-item.show > a.nav-link.dropdown-toggle::after {
+notanav li.notanav-item.show > a.notanav-link.dropdown-toggle::after {
   content: "\f106";
 }
 
-nav li.nav-item:not(.user-item) > a.nav-link:hover,
-nav li.nav-item.show > a.nav-link {
+notanav li.notanav-item:not(.user-item) > a.notanav-link:hover,
+notanav li.notanav-item.show > a.notanav-link {
   opacity: .8;
 }
 
-nav li.nav-item > .dropdown-menu {
+notanav li.notanav-item > .dropdown-menu {
   padding: 15px 0;
   min-width: 300px;
   top: 45px;
@@ -220,7 +220,7 @@ nav li.nav-item > .dropdown-menu {
           transform: translate(-50%, 0);
 }
 
-nav li.nav-item > .dropdown-menu::before {
+notanav li.notanav-item > .dropdown-menu::before {
   content: "";
   position: absolute;
   top: -7px;
@@ -233,7 +233,7 @@ nav li.nav-item > .dropdown-menu::before {
   background-color: white;
 }
 
-nav li.nav-item > .dropdown-menu > a.dropdown-item {
+notanav li.notanav-item > .dropdown-menu > a.dropdown-item {
   padding: 10px 15px 10px 20px;
   font-size: 15px;
   position: relative;
@@ -244,7 +244,7 @@ nav li.nav-item > .dropdown-menu > a.dropdown-item {
   overflow: hidden;
 }
 
-nav li.nav-item > .dropdown-menu > a.dropdown-item::before {
+notanav li.notanav-item > .dropdown-menu > a.dropdown-item::before {
   position: absolute;
   content: '';
   left: 0;
@@ -256,18 +256,18 @@ nav li.nav-item > .dropdown-menu > a.dropdown-item::before {
   transition: width .25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-nav li.nav-item > .dropdown-menu > a.dropdown-item img {
+notanav li.notanav-item > .dropdown-menu > a.dropdown-item img {
   margin-right: 15px;
   width: 30px;
 }
 
-nav li.nav-item > .dropdown-menu > a.dropdown-item span.name {
+notanav li.notanav-item > .dropdown-menu > a.dropdown-item span.name {
   font-size: 15px;
   font-weight: bold;
   color: #031b4e;
 }
 
-nav li.nav-item > .dropdown-menu > a.dropdown-item span.des {
+notanav li.notanav-item > .dropdown-menu > a.dropdown-item span.des {
   font-size: 13px;
   color: #898b96;
   max-width: 200px;
@@ -278,20 +278,20 @@ nav li.nav-item > .dropdown-menu > a.dropdown-item span.des {
   transition: color .25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-nav li.nav-item > .dropdown-menu > a.dropdown-item:hover {
+notanav li.notanav-item > .dropdown-menu > a.dropdown-item:hover {
   background-color: #f6fafe;
 }
 
-nav li.nav-item > .dropdown-menu > a.dropdown-item:hover span.des {
+notanav li.notanav-item > .dropdown-menu > a.dropdown-item:hover span.des {
   color: #031b4e
 }
 
-nav li.nav-item > .dropdown-menu > a.dropdown-item:hover::before {
+notanav li.notanav-item > .dropdown-menu > a.dropdown-item:hover::before {
   width: 5px;
 }
 
 /* user item */
-nav li.nav-item.user-item > a.nav-link {
+notanav li.notanav-item.user-item > a.notanav-link {
   border: 1px solid #fff;
   border-radius: 5px;
   color: #fff;
@@ -301,14 +301,14 @@ nav li.nav-item.user-item > a.nav-link {
   transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-nav li.nav-item.user-item > a.nav-link:hover {
+notanav li.notanav-item.user-item > a.notanav-link:hover {
   color: var(--thBlue);
   background: #fff;
 }
 
 /* scrolled class */
-nav.scrolled,
-nav.custom {
+notanav.scrolled,
+notanav.custom {
   background: rgba(0, 39, 167, .95);
   padding: 55px 0 15px 0 !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
@@ -1082,14 +1082,14 @@ input.th-input:focus {
     width: 100%;
   }
 
-  /* -- :: Navbar */
-  nav {
+  /* -- :: notanavbar */
+  notanav {
     background: transparent;
     padding: 12px 0 12px 0 !important;
     box-shadow: none;
   }
 
-  nav::before {
+  notanav::before {
     position: absolute;
     content: '';
     left: 0;
@@ -1101,28 +1101,28 @@ input.th-input:focus {
     z-index: -1;
   }
 
-  nav .navbar-brand img {
+  notanav .notanavbar-brand img {
     height: 26px;
   }
 
-  nav.scrolled,
-  nav.custom {
+  notanav.scrolled,
+  notanav.custom {
     background: transparent;
     padding: 12px 0 12px 0 !important;
     box-shadow: none;
   }
 
-  nav li.nav-item > a.nav-link,
-  nav li.nav-item.user-item > a.nav-link {
+  notanav li.notanav-item > a.notanav-link,
+  notanav li.notanav-item.user-item > a.notanav-link {
     border-bottom: 1px solid var(--thBorderColor);
     padding: 12px 0;
   }
 
-  nav li.nav-item > a.nav-link.dropdown-toggle {
+  notanav li.notanav-item > a.notanav-link.dropdown-toggle {
     position: relative;
   }
 
-  nav li.nav-item > a.nav-link.dropdown-toggle::after {
+  notanav li.notanav-item > a.notanav-link.dropdown-toggle::after {
     position: absolute;
     right: 0;
     top: 50%;
@@ -1140,15 +1140,15 @@ input.th-input:focus {
     float: right;
   }
 
-  nav li.nav-item > a.nav-link,
-  nav li.nav-item > .dropdown-menu > a.dropdown-item,
-  nav li.nav-item.user-item > a.nav-link {
+  notanav li.notanav-item > a.notanav-link,
+  notanav li.notanav-item > .dropdown-menu > a.dropdown-item,
+  notanav li.notanav-item.user-item > a.notanav-link {
     color: var(--typeColor);
     font-size: 14px;
     font-weight: bold;
   }
 
-  nav li.nav-item > .dropdown-menu {
+  notanav li.notanav-item > .dropdown-menu {
     min-width: auto;
     top: 0;
     left: auto;
@@ -1159,40 +1159,40 @@ input.th-input:focus {
     padding: 5px 0 5px 10px;
   }
 
-  nav li.nav-item > .dropdown-menu::before {
+  notanav li.notanav-item > .dropdown-menu::before {
     display: none;
   }
 
-  nav li.nav-item > .dropdown-menu > a.dropdown-item {
+  notanav li.notanav-item > .dropdown-menu > a.dropdown-item {
     padding: 8px 0;
     border-bottom: 1px solid var(--thBorderColor);
   }
 
-  nav li.nav-item > .dropdown-menu > a.dropdown-item::before {
+  notanav li.notanav-item > .dropdown-menu > a.dropdown-item::before {
     display: none;
   }
 
-  nav li.nav-item > .dropdown-menu > a.dropdown-item:hover {
+  notanav li.notanav-item > .dropdown-menu > a.dropdown-item:hover {
     background: #fff;
   }
 
-  nav li.nav-item > .dropdown-menu > a.dropdown-item span.name {
+  notanav li.notanav-item > .dropdown-menu > a.dropdown-item span.name {
     font-size: 12px;
     color: rgba(3, 27, 78, 0.7);
     font-weight: 600;
   }
 
-  nav li.nav-item > .dropdown-menu > a.dropdown-item:hover span.name {
+  notanav li.notanav-item > .dropdown-menu > a.dropdown-item:hover span.name {
     color: var(--typeColor);
   }
 
-  nav li.nav-item.user-item > a.nav-link {
+  notanav li.notanav-item.user-item > a.notanav-link {
     border-width: 0 0 1px;
     border-radius: 0;
     padding: 8px 0;
   }
 
-  .navbar-collapse {
+  .notanavbar-collapse {
     position: fixed;
     top: 60px;
     width: 100%;
@@ -1201,7 +1201,7 @@ input.th-input:focus {
     height: 100%;
   }
 
-  nav .navbar-nav {
+  notanav .notanavbar-notanav {
     padding: 30px;
     width: calc(100% - 30px);
     margin: 0 auto;
@@ -1211,13 +1211,13 @@ input.th-input:focus {
     max-width: 690px;
   }
 
-  .navbar-expand-lg > .container,
-  .navbar-expand-lg > .container-fluid {
+  .notanavbar-expand-lg > .container,
+  .notanavbar-expand-lg > .container-fluid {
     padding: 0 15px;
   }
 
-  /* Toggle Nav Button */
-  nav .navbar-toggler {
+  /* Toggle notanav Button */
+  notanav .notanavbar-toggler {
     position: relative;
     width: 30px;
     height: 30px;
@@ -1238,7 +1238,7 @@ input.th-input:focus {
     transition: all .2s linear;
   }
 
-  nav .navbar-toggler span {
+  notanav .notanavbar-toggler span {
     position: absolute;
     width: 30px;
     height: 2px;
@@ -1251,7 +1251,7 @@ input.th-input:focus {
     transition: all 0.3s linear;
   }
 
-  nav .navbar-toggler.collapsed span::before {
+  notanav .notanavbar-toggler.collapsed span::before {
     content: "";
     position: absolute;
     width: 0;
@@ -1263,7 +1263,7 @@ input.th-input:focus {
     transition: all 0.3s linear;
   }
 
-  nav .navbar-toggler.collapsed span:nth-child(1) {
+  notanav .notanavbar-toggler.collapsed span:nth-child(1) {
     -webkit-animation: span-first-off 0.5s ease-in-out;
             animation: span-first-off 0.5s ease-in-out;
     -webkit-animation-fill-mode: forwards;
@@ -1271,14 +1271,14 @@ input.th-input:focus {
     top: 40%;
   }
 
-  nav .navbar-toggler.collapsed span:nth-child(2) {
+  notanav .notanavbar-toggler.collapsed span:nth-child(2) {
     -webkit-animation: span-second-off 0.5s ease-in-out;
             animation: span-second-off 0.5s ease-in-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
 
-  nav .navbar-toggler.collapsed span:nth-child(3) {
+  notanav .notanavbar-toggler.collapsed span:nth-child(3) {
     -webkit-animation: span-third-off 0.5s ease-in-out;
             animation: span-third-off 0.5s ease-in-out;
     -webkit-animation-fill-mode: forwards;
@@ -1286,13 +1286,13 @@ input.th-input:focus {
     top: 60%;
   }
 
-  nav .navbar-toggler:hover span::before {
+  notanav .notanavbar-toggler:hover span::before {
     width: 100%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
 
-  nav .navbar-toggler span:nth-child(1) {
+  notanav .notanavbar-toggler span:nth-child(1) {
     -webkit-animation: span-first-on 0.5s ease-in-out;
             animation: span-first-on 0.5s ease-in-out;
     -webkit-animation-fill-mode: forwards;
@@ -1300,14 +1300,14 @@ input.th-input:focus {
     top: 50%;
   }
 
-  nav .navbar-toggler span:nth-child(2) {
+  notanav .notanavbar-toggler span:nth-child(2) {
     -webkit-animation: span-second-on 0.5s ease-in-out;
             animation: span-second-on 0.5s ease-in-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
 
-  nav .navbar-toggler span:nth-child(3) {
+  notanav .notanavbar-toggler span:nth-child(3) {
     -webkit-animation: span-third-on 0.5s ease-in-out;
             animation: span-third-on 0.5s ease-in-out;
     -webkit-animation-fill-mode: forwards;
@@ -1578,8 +1578,8 @@ input.th-input:focus {
     padding: 50px 0 20px;
   }
 
-  /* -- :: Navbar */
-  nav .navbar-nav {
+  /* -- :: notanavbar */
+  notanav .notanavbar-notanav {
     max-width: 510px;
   }
 
@@ -1642,8 +1642,8 @@ input.th-input:focus {
     padding: 50px 0 20px;
   }
 
-  /* -- :: Navbar */
-  nav .navbar-nav {
+  /* -- :: notanavbar */
+  notanav .notanavbar-notanav {
     max-width: 100%;
     overflow: auto;
     max-height: 480px;
